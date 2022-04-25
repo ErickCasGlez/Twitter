@@ -1,8 +1,8 @@
 const User = require('./../../app/user')
 
 describe("Unit test for User class", () => {
-    test('Create am User Object', () => {
-      const user = new user(1, "eri_gonza", "Erick", "Bio", "dateCreated", "lastUpload")
+    test('Create an User Object', () => {
+      const user = new User(1, "eri_gonza", "Erick", "Bio", "dateCreated", "lastUpload")
       expect(user.id).toBe(1)
       expect(user.username).toBe("eri_gonza")
       expect(user.name).toBe("Erick")
