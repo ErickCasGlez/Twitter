@@ -1,13 +1,11 @@
 const User = require('./../../app/models/user')
 
-describe("Unit test for User class", () => {
-    test('Fecha', () => {
+describe("Add getters", () => {
+    test('Add getters', () => {
         const user = new User(1, "eri_gonza", "Erick", "Bio")
-        expect(user.id).toBe(1)
-        expect(user.username).toBe("eri_gonza")
-        expect(user.name).toBe("Erick")
-        expect(user.bio).toBe("Bio")
-        expect(user.dateCreated).not.toBeUndefined()
-        expect(user.lastUpload).not.toBeUndefined()
+        expect(user.getUsername).toBe("eri_gonza")
+        expect(user.getBio).toBe("Bio")
+        expect(user.getDateCreated).not.toBeUndefined()
+        expect(user.getLastUpload).not.toBeUndefined()
       });
   })
