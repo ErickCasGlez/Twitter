@@ -19,7 +19,7 @@ class User {
         return this.dateCreated
     }
 
-    get getLastUpdated(){
+    get getLastUpload(){
         return this.lastUpload
     }
 }
